@@ -1,0 +1,35 @@
+{
+  "name": "knightbot",
+  "version": "1.0.0",
+  "description": "This is the Knight Bot.",
+  "main": "bot.js",
+  "engines": {
+    "node": "10.x",
+    "npm": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojadoac/KnightBot.git"
+  },
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
+  "author": "mojadoac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mojadoac/KnightBot/issues"
+  },
+  "homepage": "https://github.com/mojadoac/KnightBot#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "node-opus": "^0.3.1",
+    "ytdl-core": "^0.29.1",
+    "ffmpeg-binaries": "^4.0.0",
+    "opusscript": "^0.0.6"
+  }
+}
