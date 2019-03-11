@@ -27,10 +27,9 @@
   "homepage": "https://github.com/mojadoac/KnightBot#readme",
   "dependencies": {
     "discord.js": "^11.4.2",
-    "recursive-readdir": "^2.2.2",
-    "ytdl-core": "^0.29.1",
-    "ffmpeg": "^0.0.4",
+    "node-opus": "^0.3.1",
     "ffmpeg-binaries": "^4.0.0",
-    "node-opus": "^0.2.7"
+    "recursive-readdir": "^2.2.2",
+    "ytdl-core": "^0.29.1"
   }
 }
