@@ -81,7 +81,7 @@ module.exports.run = async (bot, message, args, prefix) =>
         // If the bot is in a voice channel, play the sound
         if (message.guild.voiceConnection)
         {
-            const dispatcher = cnt.playFile(`./sounds/${args[0]}.mp3`);
+            const dispatcher = cnt.playFile(`./sounds/${args[0]}.mp3`, {passes: 2, volume:0, bitrate: "auto"});
             message.reply("Playing " + `${args[0]} now.`).then(msg => msg.delete(8000));
         }
         else
@@ -90,7 +90,7 @@ module.exports.run = async (bot, message, args, prefix) =>
                 connection => 
                 {
                     cnt = connection;
-                    const dispatcher = cnt.playFile(`./sounds/${args[0]}.mp3`);
+                    const dispatcher = cnt.playFile(`./sounds/${args[0]}.mp3`, {passes: 2, volume:0, bitrate: "auto"});
                 });
             message.reply("I have successfully joined the voice channel.").then(msg => msg.delete(5000)); 
         }

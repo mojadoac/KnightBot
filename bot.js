@@ -25,7 +25,6 @@ recursive("./commands/", (err, files) =>
     f = `./${f}`;
 		let props = require(`${f}`);
 		bot.commands.set(props.help.name, props);
-		//console.log(`${f} loaded!`);
   });
 
 });
